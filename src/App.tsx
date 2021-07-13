@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './style/style.scss';
-import FilesList from './cmps/FilesList'
+import FilesList from './components/FilesList'
 import { apiService } from './services/api.service'
-import DynamicRender from './cmps/DynamicRender'
-import { Header } from './cmps/Header';
+import DynamicRender from './components/DynamicRender'
+import { Header } from './components/Header';
 let inital: object[]
 function App() {
   const [files, setFiles] = useState(inital)

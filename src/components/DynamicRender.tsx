@@ -7,27 +7,26 @@ type propsTypes = {
     file: any
 }
 export default function DynamicRender({ type, handleClose, open, file }: propsTypes): any {
+    const types = {
+        MP4: "mp4",
+        JPG: "jpg",
+        PDF: "pdf",
+    }
     switch (type) {
-        case 'mp4':
+        case types.MP4:
             return (
                 <Modal handleClose={handleClose} open={open} file={file}>
-                    <div className="modal-image-container">
                         <video src={`https://mighty-sierra-05836.herokuapp.com/${file.name}`} controls></video>
-                        </div>
                 </Modal>)
-        case 'pdf':
+        case types.PDF:
             return (
                 <Modal handleClose={handleClose} open={open} file={file}>
-                    <div className="modal-image-container">
                         <iframe src={`https://mighty-sierra-05836.herokuapp.com/${file.name}`} width="100%" title={file.name}></iframe>
-                    </div>
                 </Modal>)
-        case 'jpg':
+        case types.JPG:
             return (
                 <Modal handleClose={handleClose} open={open} file={file}>
-                    <div className="modal-image-container">
                         <img src={`https://mighty-sierra-05836.herokuapp.com/${file.name}`} alt="" />
-                    </div>
                 </Modal>)
 
     }

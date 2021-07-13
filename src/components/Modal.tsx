@@ -4,10 +4,10 @@ import DialogContent from '@material-ui/core/DialogContent';
 import { DialogTitle } from '@material-ui/core';
 type DialogProp = {
     handleClose: () => void,
-    open:boolean,
-    file:any
+    open: boolean,
+    file: any
 }
-export const Modal:React.FC<DialogProp> = ({  handleClose,open,children,file})=> {
+export const Modal: React.FC<DialogProp> = ({ handleClose, open, children, file }) => {
 
     return (
         <div>
@@ -16,14 +16,16 @@ export const Modal:React.FC<DialogProp> = ({  handleClose,open,children,file})=>
                 onClose={handleClose}
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description">
-                    <DialogTitle className="dialog-title">
-                        <div className="modal-header">
+                <DialogTitle className="dialog-title">
+                    <div className="modal-header">
                         <h2>{file.name}</h2>
                         <i className="far fa-window-close" onClick={handleClose}></i>
-                        </div>
-                    </DialogTitle>
+                    </div>
+                </DialogTitle>
                 <DialogContent>
-                    {children}
+                    <div className="modal-image-container">
+                        {children}
+                    </div>
                 </DialogContent>
             </Dialog>
         </div>

@@ -1,11 +1,13 @@
 import React from 'react'
 import FilePreview from './FilePreview'
+import {types} from '../services/enum'
 //Switch case by type of the file
 
 export default function DynamicCmp({ file,handleOpen }: any):any {
+   
     const type = file.name.substring(file.name.length - 3, file.name.length)
     switch (type) {
-        case 'mp4':
+        case types.MP4:
             file = {
                 ...file,
                 type,
@@ -14,7 +16,7 @@ export default function DynamicCmp({ file,handleOpen }: any):any {
                 typeData: `${file.length} seconds`
             }
             break;
-        case 'pdf':
+        case types.PDF:
             file = {
                 ...file,
                 type,
@@ -23,7 +25,7 @@ export default function DynamicCmp({ file,handleOpen }: any):any {
 
             }
             break;
-        case 'jpg': file = {
+        case types.JPG: file = {
             ...file,
             type,
             iconSrc:'fas fa-image',
