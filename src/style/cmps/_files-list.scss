@@ -1,0 +1,7 @@
+.files-list{
+    display:grid;
+    // gap: 10px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,270px);
+    justify-content:center;
+}

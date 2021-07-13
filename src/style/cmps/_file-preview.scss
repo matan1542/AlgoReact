@@ -1,0 +1,25 @@
+.file-preview {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+    padding:3px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 5px rgba(43, 41, 41, 0.712);
+   
+        .img-container{
+            padding:9px;
+            font-size: 30px;
+        }
+   
+    .details-container{
+        display: flex;
+        width: 100%;
+        justify-content:space-between;
+        .middle-container{
+            .file-type{
+                white-space:nowrap;
+            }
+        }
+    }
+}
