@@ -1,10 +1,13 @@
 import React from 'react'
 import FilePreview from './FilePreview'
-import {types} from '../services/enum'
 //Switch case by type of the file
 
 export default function DynamicCmp({ file,handleOpen }: any):any {
-   
+    const types = {
+        MP4: "mp4",
+        JPG: "jpg",
+        PDF: "pdf",
+    }
     const type = file.name.substring(file.name.length - 3, file.name.length)
     switch (type) {
         case types.MP4:
