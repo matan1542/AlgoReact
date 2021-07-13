@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/AlgoReact/static/css/main.9d2772e6.chunk.css",
-    "main.js": "/AlgoReact/static/js/main.82b1a78c.chunk.js",
-    "main.js.map": "/AlgoReact/static/js/main.82b1a78c.chunk.js.map",
-    "runtime-main.js": "/AlgoReact/static/js/runtime-main.57fbb19b.js",
-    "runtime-main.js.map": "/AlgoReact/static/js/runtime-main.57fbb19b.js.map",
-    "static/js/2.fb2fcfca.chunk.js": "/AlgoReact/static/js/2.fb2fcfca.chunk.js",
-    "static/js/2.fb2fcfca.chunk.js.map": "/AlgoReact/static/js/2.fb2fcfca.chunk.js.map",
-    "static/js/3.8dd1f108.chunk.js": "/AlgoReact/static/js/3.8dd1f108.chunk.js",
-    "static/js/3.8dd1f108.chunk.js.map": "/AlgoReact/static/js/3.8dd1f108.chunk.js.map",
+    "main.css": "/AlgoReact/static/css/main.4cd43561.chunk.css",
+    "main.js": "/AlgoReact/static/js/main.a36782fc.chunk.js",
+    "main.js.map": "/AlgoReact/static/js/main.a36782fc.chunk.js.map",
+    "runtime-main.js": "/AlgoReact/static/js/runtime-main.517626c8.js",
+    "runtime-main.js.map": "/AlgoReact/static/js/runtime-main.517626c8.js.map",
+    "static/js/2.7f4d697d.chunk.js": "/AlgoReact/static/js/2.7f4d697d.chunk.js",
+    "static/js/2.7f4d697d.chunk.js.map": "/AlgoReact/static/js/2.7f4d697d.chunk.js.map",
+    "static/js/3.a753c586.chunk.js": "/AlgoReact/static/js/3.a753c586.chunk.js",
+    "static/js/3.a753c586.chunk.js.map": "/AlgoReact/static/js/3.a753c586.chunk.js.map",
     "index.html": "/AlgoReact/index.html",
-    "static/css/main.9d2772e6.chunk.css.map": "/AlgoReact/static/css/main.9d2772e6.chunk.css.map",
-    "static/js/2.fb2fcfca.chunk.js.LICENSE.txt": "/AlgoReact/static/js/2.fb2fcfca.chunk.js.LICENSE.txt"
+    "static/css/main.4cd43561.chunk.css.map": "/AlgoReact/static/css/main.4cd43561.chunk.css.map",
+    "static/js/2.7f4d697d.chunk.js.LICENSE.txt": "/AlgoReact/static/js/2.7f4d697d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.57fbb19b.js",
-    "static/js/2.fb2fcfca.chunk.js",
-    "static/css/main.9d2772e6.chunk.css",
-    "static/js/main.82b1a78c.chunk.js"
+    "static/js/runtime-main.517626c8.js",
+    "static/js/2.7f4d697d.chunk.js",
+    "static/css/main.4cd43561.chunk.css",
+    "static/js/main.a36782fc.chunk.js"
   ]
 }
