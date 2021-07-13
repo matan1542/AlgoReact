@@ -4,21 +4,38 @@ import { loadFiles } from '../store/actions/file.actions'
 import DynamicRender from '../components/DynamicRender';
 import { useDispatch } from 'react-redux';
 import { useAppSelector } from '../store/hooks';
+import { useToasts } from 'react-toast-notifications';
+
 export default function File() {
-    
+
     const { files } = useAppSelector((state) => {
         return state.fileModule
     })
     const dispatch = useDispatch()
     const [isMounted, setMounted] = useState(false)
     const [open, setOpen] = useState({ file: null, open: false });
+    const { addToast, removeToast } = useToasts();
     useEffect(() => {
         if (!isMounted) {
             query()
             setMounted(true)
         }
         async function query() {
-           await dispatch(loadFiles())
+            try {
+                await dispatch(loadFiles())
+                addToast('load succsess', { appearance: 'success', id: 'loading-success' })
+               setTimeout(() =>{
+                   removeToast('loading-success')
+               },2000)
+            }
+            catch (err) {
+                addToast(err, { appearance: 'error', id: 'loading-error' })
+                setTimeout(() => {
+                    removeToast('loading-error')
+
+                }, 2000)
+            }
+            await dispatch(loadFiles())
         }
     })
     const handleClose = () => {

@@ -3,14 +3,17 @@ import File from './pages/File'
 import { Header } from './components/Header';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
+import { ToastProvider } from 'react-toast-notifications';
 function App() {
   return (
     <div className="App">
       <Provider store={store}>
-      <Header/>
-      <main>
-        <File />
-      </main>
+        <ToastProvider>
+          <Header />
+          <main>
+            <File />
+          </main>
+        </ToastProvider >
       </Provider>
     </div>
   );
