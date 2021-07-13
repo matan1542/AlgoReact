@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/AlgoReact/static/css/main.7a613151.chunk.css",
+    "main.js": "/AlgoReact/static/js/main.bfa26c6f.chunk.js",
+    "main.js.map": "/AlgoReact/static/js/main.bfa26c6f.chunk.js.map",
+    "runtime-main.js": "/AlgoReact/static/js/runtime-main.133f7098.js",
+    "runtime-main.js.map": "/AlgoReact/static/js/runtime-main.133f7098.js.map",
+    "static/js/2.e7319540.chunk.js": "/AlgoReact/static/js/2.e7319540.chunk.js",
+    "static/js/2.e7319540.chunk.js.map": "/AlgoReact/static/js/2.e7319540.chunk.js.map",
+    "static/js/3.15827fe2.chunk.js": "/AlgoReact/static/js/3.15827fe2.chunk.js",
+    "static/js/3.15827fe2.chunk.js.map": "/AlgoReact/static/js/3.15827fe2.chunk.js.map",
+    "index.html": "/AlgoReact/index.html",
+    "static/css/main.7a613151.chunk.css.map": "/AlgoReact/static/css/main.7a613151.chunk.css.map",
+    "static/js/2.e7319540.chunk.js.LICENSE.txt": "/AlgoReact/static/js/2.e7319540.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.133f7098.js",
+    "static/js/2.e7319540.chunk.js",
+    "static/css/main.7a613151.chunk.css",
+    "static/js/main.bfa26c6f.chunk.js"
+  ]
+}
