@@ -11,7 +11,7 @@ export function loadFiles() { // Action Creator
             return files
         } catch (err) {
             //@ts-ignore 
-            throw new Error('Couldn\' load the files  :', err)
+            throw new Error('Couldn\'t load the files  :', err)
         }
     }
 }

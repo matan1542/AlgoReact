@@ -1,6 +1,7 @@
 import React from 'react'
 import { File } from '../interfaces/File'
 import FilePreview from './FilePreview'
+import {fileType} from '../enums/enum'
 //Switch case by type of the file
 type cmpProps ={
     file:File,
@@ -8,14 +9,10 @@ type cmpProps ={
 }
 
 export default function DynamicCmp({ file,handleOpen }: cmpProps) {
-    const types = {
-        MP4: "mp4",
-        JPG: "jpg",
-        PDF: "pdf",
-    }
+    
     const type = file.name.substring(file.name.length - 3, file.name.length)
     switch (type) {
-        case types.MP4:
+        case fileType.MP4:
             file = {
                 ...file,
                 type,
@@ -24,7 +21,7 @@ export default function DynamicCmp({ file,handleOpen }: cmpProps) {
                 typeData: `${file.length} seconds`
             }
             break;
-        case types.PDF:
+        case fileType.PDF:
             file = {
                 ...file,
                 type,
@@ -33,7 +30,7 @@ export default function DynamicCmp({ file,handleOpen }: cmpProps) {
 
             }
             break;
-        case types.JPG: file = {
+        case fileType.JPG: file = {
             ...file,
             type,
             iconSrc:'fas fa-image',

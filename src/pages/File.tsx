@@ -24,7 +24,7 @@ export default function File() {
         async function query() {
             try {
                 await dispatch(loadFiles())
-                addToast('load succsess', { appearance: 'success', id: 'loading-success' })
+                addToast('load success', { appearance: 'success', id: 'loading-success' })
                setTimeout(() =>{
                    removeToast('loading-success')
                },2000)
