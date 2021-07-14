@@ -5,7 +5,7 @@ import DynamicRender from '../components/DynamicRender';
 import { useDispatch } from 'react-redux';
 import { useAppSelector } from '../store/hooks';
 import { useToasts } from 'react-toast-notifications';
-import { File } from '../interfaces/File';
+import { File as FileInterface  } from '../interfaces/File';
 
 export default function File() {
 
@@ -45,7 +45,7 @@ export default function File() {
             open: false
         }));
     };
-    const handleOpen = (file:File) => {
+    const handleOpen = (file:FileInterface) => {
         setOpen((prevState) => ({
             ...prevState,
             open: true,
