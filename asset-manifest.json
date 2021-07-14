@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/AlgoReact/static/css/main.61bf1978.chunk.css",
-    "main.js": "/AlgoReact/static/js/main.f54d87e4.chunk.js",
-    "main.js.map": "/AlgoReact/static/js/main.f54d87e4.chunk.js.map",
+    "main.js": "/AlgoReact/static/js/main.e1fd5937.chunk.js",
+    "main.js.map": "/AlgoReact/static/js/main.e1fd5937.chunk.js.map",
     "runtime-main.js": "/AlgoReact/static/js/runtime-main.a16985ab.js",
     "runtime-main.js.map": "/AlgoReact/static/js/runtime-main.a16985ab.js.map",
     "static/js/2.42c3ca7c.chunk.js": "/AlgoReact/static/js/2.42c3ca7c.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a16985ab.js",
     "static/js/2.42c3ca7c.chunk.js",
     "static/css/main.61bf1978.chunk.css",
-    "static/js/main.f54d87e4.chunk.js"
+    "static/js/main.e1fd5937.chunk.js"
   ]
 }
