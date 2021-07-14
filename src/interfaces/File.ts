@@ -7,4 +7,7 @@ export interface File{
    name: string; 
    mime: string;
    created: string;
+   iconSrc?: string;
+   type: string;
+   typeData?: string;
 }

@@ -1,7 +1,8 @@
 import React from 'react'
+import {File} from '../interfaces/File'
 type previewProps = {
-    file:any,
-    handleOpen?: (file:object) => void,
+    file:File,
+    handleOpen?: (file:File) => void,
 }
 export default function FilePreview({ file,handleOpen }: previewProps) {
     //  console.log(file)   

@@ -5,6 +5,7 @@ import DynamicRender from '../components/DynamicRender';
 import { useDispatch } from 'react-redux';
 import { useAppSelector } from '../store/hooks';
 import { useToasts } from 'react-toast-notifications';
+import { File } from '../interfaces/File';
 
 export default function File() {
 
@@ -44,7 +45,7 @@ export default function File() {
             open: false
         }));
     };
-    const handleOpen = (file) => {
+    const handleOpen = (file:File) => {
         setOpen((prevState) => ({
             ...prevState,
             open: true,
@@ -55,7 +56,7 @@ export default function File() {
     return (
         <div className="file-page">
             {(open.file && open.open) && <DynamicRender type={open.file.type} file={open.file} handleClose={handleClose} open={open.open} />}
-            <FilesList files={files} handleOpen={handleOpen} open={open.open} />
+            <FilesList files={files} handleOpen={handleOpen} />
         </div>
     );
 }
