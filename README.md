@@ -1,3 +1,5 @@
+# AlgoReact Files api ex based on ts,scss and redux as state management
+![Untitled](https://user-images.githubusercontent.com/42672986/125537080-ebd5d04f-ab47-4807-80e4-058164eff8d7.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
