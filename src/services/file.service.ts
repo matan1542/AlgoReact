@@ -1,6 +1,5 @@
 import { apiService } from './api.service'
 import {storageService} from './async-storage.service'
-import {File} from '../interfaces/File'
 const entityType = 'files'
 export const fileService = {
     query

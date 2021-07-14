@@ -1,8 +1,13 @@
 import React from 'react'
+import { File } from '../interfaces/File'
 import FilePreview from './FilePreview'
 //Switch case by type of the file
+type cmpProps ={
+    file:File,
+    handleOpen:()=>void
+}
 
-export default function DynamicCmp({ file,handleOpen }: any):any {
+export default function DynamicCmp({ file,handleOpen }: cmpProps) {
     const types = {
         MP4: "mp4",
         JPG: "jpg",

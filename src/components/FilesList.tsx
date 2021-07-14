@@ -1,9 +1,9 @@
 import React from 'react'
+import { File } from '../interfaces/File'
 import DynamicCmp from './DynamicCmp'
 type FileProps = {
-    files: object[],
-    handleOpen: (file:object) => void,
-    open: boolean
+    files: File[],
+    handleOpen: (file?:File) => void,
   }
 
 export default function FilesList({files,handleOpen}:FileProps) {
