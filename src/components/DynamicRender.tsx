@@ -2,13 +2,7 @@ import { Modal } from './Modal'
 import React from 'react'
 import {fileType} from '../enums/enum'
 
-type propsTypes = {
-    type: string,
-    handleClose: () => void,
-    open: boolean,
-    file: any
-}
-export default function DynamicRender({ type, handleClose, open, file }: propsTypes): any {
+export default function DynamicRender({ type, handleClose, open, file }) {
     switch (type) {
         case fileType.MP4:
             return (
